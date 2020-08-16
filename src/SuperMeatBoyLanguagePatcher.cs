@@ -69,8 +69,8 @@ namespace SuperMeatBoyMultilangLoader
                                         where mod.ModuleName == Path.GetFileName(exePath)
                                         select mod.BaseAddress).SingleOrDefault();
 
-            //SuperMeatBoy.exe+53A00 = Get language code function
-            IntPtr getLanguageAddress = baseAddress + 0x53A00;
+            //SuperMeatBoy.exe+5E790 = Get language code function
+            IntPtr getLanguageAddress = baseAddress + 0x5E790;
 
             //0xB8 = MOV EAX
             //0xC3 = RETN
